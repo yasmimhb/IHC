@@ -1,0 +1,166 @@
+/* Corrige problemas de layout */
+.anime-list-container {
+  position: relative;
+  padding: 20px;
+  overflow-y: auto; /* Ativa o scroll, se necessário */
+  height: 100vh; /* Ocupa a altura total da tela */
+  box-sizing: border-box;
+}
+
+.anime-list-container {
+  font-family: 'Arial', sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2c3e50; /* Cor de fundo mais escura */
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 10px; /* Espaçamento entre os botões */
+}
+
+.favorites-button, .logout-button {
+  background-color: #3498db; /* Azul para os botões */
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.favorites-button:hover, .logout-button:hover {
+  background-color: #2980b9; /* Azul mais escuro no hover */
+  transform: translateY(-2px); /* Efeito de elevação */
+}
+
+.logout-button {
+  background-color: #e74c3c; /* Vermelho para o logout */
+}
+
+.logout-button:hover {
+  background-color: #c0392b; /* Vermelho mais escuro no hover */
+}
+
+.favorites-button:focus, .logout-button:focus {
+  outline: none;
+}
+
+/* Mantém o cabeçalho fixo no topo */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky; /* Fixa o cabeçalho ao topo */
+  top: 0;
+  background-color: #4b0082; /* Mesma cor de fundo */
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+/* Estilo do botão Favoritos */
+.favorites-button {
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.favorites-button:hover {
+  background-color: darkorange;
+}
+
+/* Corrige espaçamento interno na lista */
+.anime-list {
+  margin-top: 20px;
+}
+
+.anime-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #6a0dad;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 15px;
+  overflow: hidden;
+}
+
+.anime-rank {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.anime-details {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.anime-cover {
+  width: 60px;
+  height: 90px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.anime-info {
+  flex-grow: 1;
+}
+
+.favoritar-btn {
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+.favoritar-btn {
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.favoritar-btn:hover {
+  background-color: darkorange; /* Fica mais escuro ao passar o mouse */
+}
+
+.favoritar-btn.favorited {
+  background-color: green; /* Verde quando clicado */
+  color: white;
+  font-weight: bold;
+  transform: scale(1.1); /* Um leve zoom para destacar */
+}
+
+.favoritar-btn.favorited::after {
+  content: " ✔"; /* Adiciona o símbolo de check */
+  font-size: 14px;
+  margin-left: 5px;
+}

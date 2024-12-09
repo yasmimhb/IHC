@@ -1,0 +1,42 @@
+/* Estilo geral para o botão "Voltar para Animes" */
+.remove-favorite-btn {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.remove-favorite-btn:hover {
+  background-color: #fc3c27c2; /* Tom mais escuro de amarelo */
+  transform: translateY(-2px); /* Efeito de elevação */
+}
+
+/* Botão de Remover */
+.remove-favorite-btn{
+  background-color: #fc3c27; /* Cor vermelha para remover */
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.back-button{
+  background-color: #000000; /* Vermelho para o logout */
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+}
+
+.back-button:hover{
+  background-color: #00000093; /* Vermelho para o logout */
+}
